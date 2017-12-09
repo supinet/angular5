@@ -1,0 +1,10 @@
+
+<div>all {{ numbers | json }}</div> 
+<hr>
+<div>odds list {{ odds }}</div>
+<hr>
+<div>evens list {{ evens }}</div>
+<hr>
+<div *ngFor="let number of numbers"></div>
+<div *ngIf="number%2===0 then odd else even"></div>
+<div ng-template #odd></div>

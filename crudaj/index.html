@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="exemplo1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>crudaj</title>
+</head>
+<body ng-controller="Controller1 as crtl">
+    <div>
+        <form action="">
+            nome: <input id="nome" type="text" ng-model="pessoa.nome">
+            <input type="button" value="save" ng-click="crtl.save()" />
+        </form>
+    </div>
+    <div>
+        <table></table>
+    </div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
